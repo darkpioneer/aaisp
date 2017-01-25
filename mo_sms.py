@@ -28,6 +28,10 @@ class PostHandler(BaseHTTPRequestHandler):
 		
 		# Print the sms received
 		print "SMS Received From ICCID: " + source + " sent to: " + destination + " containing the text: " + text
+		print "--------"
+		print "raw data"
+		print form
+		print "--------"
     
 def run(server_class=HTTPServer, handler_class=PostHandler, port=8001):
 	try:
