@@ -50,6 +50,8 @@ class PostHandler(BaseHTTPRequestHandler):
 		self.send_response(200)
 		self.end_headers()
 		
+		# Put own code here for dealing with SMS
+		
 		# Print the sms received
 		print timestamp
 		print "SMS Received From ICCID: " + source + " sent to: " + destination + " containing the text: " + text
