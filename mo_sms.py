@@ -47,7 +47,7 @@ class PostHandler(BaseHTTPRequestHandler):
 		pid = form.getvalue('pid')
 
 		# Begin the response
-		self.send_response(200)
+		self.send_response(200) # Send HTTP 200 (OK) back to AAISP or phone reports "SMSService Rejected Message(71:ERR)"
 		self.end_headers()
 		
 		# Put own code here for dealing with SMS
